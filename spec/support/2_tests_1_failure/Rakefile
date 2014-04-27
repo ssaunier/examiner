@@ -1,0 +1,21 @@
+def plus_one(i)
+  i + 1
+end
+
+def minus_one(i)
+  i  # Boffus implementation!
+end
+
+task :default do
+  require "minitest/autorun"
+  describe "#plus_one" do
+    it "should return 2 when passed 1" do
+      plus_one(1).must_equal 2
+    end
+  end
+  describe "#minus_one" do
+    it "should return 2 when passed 3" do
+      minus_one(3).must_equal 2
+    end
+  end
+end
