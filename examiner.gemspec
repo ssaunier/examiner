@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["seb@saunier.me"]
   spec.summary       = %q{Grade a student's exercise solution using rake and minitest}
   spec.description   = spec.summary
-  spec.homepage      = ""
+  spec.homepage      = "http://github.com/ssaunier/examiner"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
@@ -18,6 +18,6 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  spec.add_development_dependency "bundler", "~> 1.6"
+  spec.add_development_dependency "bundler", "~> 1.5"
   spec.add_development_dependency "rake"
 end

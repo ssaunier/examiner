@@ -3,11 +3,9 @@
 
 # Examiner
 
-Grade a student's exercise solution.
+Grade a student's exercise solution, assuming:
 
-Assumptions:
-
-- The exercise uses [minitest](https://github.com/seattlerb/minitest) to be checkied
+- The exercise uses [minitest](https://github.com/seattlerb/minitest) to be checked
 - There is a `Rakefile` in the exercise folder
 
 ## Installation
@@ -20,7 +18,9 @@ gem 'examiner'
 
 And then execute:
 
-    $ bundle
+```bash
+$ bundle
+```
 
 ## Usage
 
