@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/ssaunier/examiner.svg?branch=master)](https://travis-ci.org/ssaunier/examiner)
+[![Gem Version](https://badge.fury.io/rb/examiner.svg)](http://badge.fury.io/rb/examiner)
+
 # Examiner
 
 Grade a student's exercise solution.
@@ -5,7 +8,7 @@ Grade a student's exercise solution.
 Assumptions:
 
 - The exercise uses [minitest](https://github.com/seattlerb/minitest) to be checkied
-- There is a `Rakefile` in the exercise folderx
+- There is a `Rakefile` in the exercise folder
 
 ## Installation
 
