@@ -22,6 +22,13 @@ module Examiner
       end
     end
 
+    def default_rake?(lines)
+      lines.reverse_each.each do |line|
+        return false if /Don't know how to build task 'default'/.match line
+      end
+      true
+    end
+
     def success?
       @success
     end

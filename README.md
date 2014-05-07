@@ -31,9 +31,13 @@ the following code.
 exercise_directory = "/path/to/student_exercise_with_rakefile"
 
 runner = Examiner::RakeRunner.new
-runner.run exercise_directory
-if runner.success?
+begin
+  runner.run exercise_directory
   puts "Results: #{runner.tests - runner.failures}/#{runner.tests}"
+rescue Examiner::RakefileMissingError => e
+  puts "Folder does not have any Rakefile"
+rescue Examiner::MissingDefaultRakeTaskError => e
+  puts "Could not launch tests with 'rake'"
 end
 
 # You can display stdout and stderr
